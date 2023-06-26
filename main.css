@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header h1, 
+section h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 16px 0;
+    background-color: rgb(52, 52, 211);
+    color: #fff;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 24px;
+}
+
+header nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+section .container {
+    align-items: flex-start;
+}
+
+section h3{
+    padding: 24px 0;
+   
+}
+
+section h2, h3
+ {
+    margin-bottom: 16px;
+    color: blue;
+    text-decoration: underline;
+    
+}
+
+section {
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+section p {
+    margin-bottom: 8px;
+}
+
+section img {
+    margin-right: 32px;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+section img {
+    margin-right: 40px;
+}
+
+.sobre .noticia a {
+    display: flex;
+    font-size: 2em;
+}
+
+.destaque .noticia img {
+    margin-right: 8px;
+}
+
+.lista-de-sapatos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#produtos {
+    padding: 40px 0;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    flex-basis: calc(25% - 20px);
+    margin-bottom: 40px;
+}
+
+.product img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.add-to-cart {
+    background-color: blue;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#produtos h2 {
+    text-align: center;
+    position: relative;
+}
+
+#produtos h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: blue;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .destaque .noticia a {
+        font-size: 1.5em;
+    }
+
+    .noticias {
+        grid-template-columns: repeat(2, 49%);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    section .produtos {
+        display: none;
+    }
+}
